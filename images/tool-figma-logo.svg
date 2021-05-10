@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="60px" viewBox="0 0 40 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>tool-figma-logo</title>
+    <g id="What-I-do" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tool-figma-logo" transform="translate(-0.000000, 0.000000)" fill-rule="nonzero">
+            <path d="M10,60 C15.52,60 20,55.52 20,50 L20,40 L10,40 C4.48,40 0,44.48 0,50 C0,55.52 4.48,60 10,60 Z" id="path0_fill" fill="#0ACF83"></path>
+            <path d="M0,30 C0,24.48 4.48,20 10,20 L20,20 L20,40 L10,40 C4.48,40 0,35.52 0,30 Z" id="path1_fill" fill="#A259FF"></path>
+            <path d="M0,10 C0,4.48 4.48,0 10,0 L20,0 L20,20 L10,20 C4.48,20 0,15.52 0,10 Z" id="path1_fill_1_" fill="#F24E1E"></path>
+            <path d="M20,0 L30,0 C35.52,0 40,4.48 40,10 C40,15.52 35.52,20 30,20 L20,20 L20,0 Z" id="path2_fill" fill="#FF7262"></path>
+            <path d="M40,30 C40,35.52 35.52,40 30,40 C24.48,40 20,35.52 20,30 C20,24.48 24.48,20 30,20 C35.52,20 40,24.48 40,30 Z" id="path3_fill" fill="#1ABCFE"></path>
+        </g>
+    </g>
+</svg>

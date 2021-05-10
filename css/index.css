@@ -1,0 +1,333 @@
+section {
+    width: 100%;
+    padding: 5rem 0;
+    /* padding: 5rem 1rem; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+}
+
+section > * {
+    max-width: var(--maximum-width);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-description {
+    max-width: 40rem;
+    text-align: center;
+    margin: 0 auto 4rem auto;
+}
+
+@media screen and (min-width: 700px) {
+    section {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+
+/* Intro */
+#intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    height: 200px;
+    background-color: rgb(242, 242, 242);
+    text-align: center;
+    padding: 2rem;
+}
+
+#intro h1 span {
+    display:block;
+    color: var(--dark-mid-text);
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 700px) {
+    #intro {
+        height: 700px;
+        background: no-repeat center/cover url("/images/header-wide.png");
+    }
+
+}
+
+
+
+/* What I do */
+#what-i-do {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--light-text);
+    background-color: var(--primary-accent);
+}
+
+#what-i-do p {
+    color: var(--light-text);
+}
+
+.skills {
+    width: 100%;
+    display: grid;
+    gap: 4rem;
+}
+
+.skill {
+    text-align: center;
+}
+
+.skill img {
+    height: 3.5rem;
+    width: auto;
+}
+
+@media screen and (min-width: 700px) {
+    /* On a wider screen skills are laid out in columns */
+    .skills {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* Selected work */
+
+#selected-work {
+    background-color: var(--dark-background);
+
+}
+
+.thumbnail {
+    position: relative;
+    scroll-snap-align: center;
+    /* margin: 0 1rem; */
+    padding: 0 0.5rem;
+}
+
+.thumbnail img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    filter: brightness(100%);
+    transition: all 0.5s ease; 
+}
+
+.thumbnail-label {
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+    right: 0.5rem;
+    /* width: 100%; */
+    overflow: hidden;
+    background-color: rgba(255,255,255,1);
+    border-radius: 0 0 0.5rem 0.5rem;
+    box-shadow: 0 -2rem -2rem rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail-label h3 {
+    color: var(--dark-text);
+    font-size: 24px;
+    margin: 0.3rem 1rem 0 1rem;
+}
+
+.thumbnail-label p {
+    font-size: 16px;
+    color: var(--dark-mid-text);
+    margin: 0px 1rem 0.7rem 1rem;
+}
+
+@media screen and (max-width: 699px) {
+    #selected-work {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+
+    .thumbnail {
+        scroll-snap-align: start;
+        /* margin: 0 0.5rem; */
+    }
+
+    .thumbnail-label {
+        max-height: 0; /* Using max-height because regular height does not transition smoothly */
+        opacity: 0;
+        transition: all 0.5s ease; 
+    }
+    .thumbnail:hover .thumbnail-label {
+        opacity: 1;
+        max-height: 100px;
+    }
+    .thumbnail:hover img {
+        filter: brightness(80%);
+    }
+}
+
+/* Tools section */
+#tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tools-grid {
+    display: grid;
+    gap: 4rem;
+}
+
+.tool {
+    display: flex;
+}
+
+.tool img {
+    flex: 0 0 4rem;
+    height: 4rem;
+    width: auto;
+    margin-right: 1.5rem;
+}
+
+.tool h3 {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 700px) {
+    .tools-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* Recommendations */
+
+#recommendations {
+    background-color: #0A66C2;
+}
+
+.recommendations-carousel-container {
+    position: relative;
+    margin: auto;
+}
+
+.recommendation {
+    scroll-snap-align: start;
+    padding: 0 2rem;
+}
+
+.recommendation img {
+    height: 9rem;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    filter: grayscale(100%);
+}
+
+.recommendation blockquote {
+    font-size: 1rem;
+    color: var(--light-mid-text);  
+    text-align: center; 
+    margin-top: 2rem;
+}
+
+.recommendation cite {
+    display: block;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+#recommendations .carousel-container:before {
+    content: url('../images/quote-open.svg');
+    position: absolute;
+    top: -1.5rem;
+    left: 0.5rem;
+    opacity: 0.5;    
+}
+
+#recommendations .carousel-container:after {
+    content: url('../images/quote-close.svg');
+    position: absolute;
+    bottom: 0;
+    right: 0.5rem;
+    opacity: 0.5;    
+}
+
+@media screen and (min-width: 700px) {
+    .recommendation {
+        padding: 0 2rem;
+    }
+}
+
+/* Clients */
+.clients-grid, .more-clients-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 1rem;
+    row-gap: 3rem;
+    scroll-snap-align: start;
+}
+
+.more-clients-grid {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+}
+
+.clients-grid img, .more-clients-grid img {
+    padding: 0 2rem;
+}
+
+
+@media screen and (min-width: 600px) {
+    .clients-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .more-clients-grid {
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 2rem;
+    }
+    .clients-grid img, .more-clients-grid img {
+        padding: 0 1rem;
+    }
+}
+
+/* Contact */
+
+#contact {
+    background-color: var(--dark-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-photo {
+    height: 12rem;
+    width: auto;
+    display: block;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+}
+
+.contact-links i {
+    font-size: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    padding: 0.5rem;
+    line-height: 1rem;
+    margin: 0 1rem 1rem 0;
+}
+
+#contact a {
+    color: var(--light-mid-text)
+}
+
+#contact a:hover {
+    color: var(--light-text)
+}

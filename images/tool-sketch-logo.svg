@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="67px" height="60px" viewBox="0 0 67 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>tool-sketch-logo</title>
+    <g id="What-I-do" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tool-sketch-logo" fill-rule="nonzero">
+            <polygon id="Path" fill="#FDB300" points="14.4662323 1.97544602 33.1517822 0 51.8373321 1.97544602 66.3035642 21.3950848 33.1517822 59.9999874 0 21.3950848"></polygon>
+            <g id="Group" transform="translate(0.000000, 21.395085)">
+                <polygon id="Path" fill="#EA6C00" points="13.4281339 0 33.151812 38.6049152 0 0"></polygon>
+                <polygon id="Path" fill="#EA6C00" transform="translate(49.727628, 19.302458) scale(-1, 1) translate(-49.727628, -19.302458) " points="46.5798562 0 66.3035344 38.6049152 33.1517223 0"></polygon>
+                <polygon id="Path" fill="#FDAD00" points="13.4281339 0 52.8754902 0 33.151812 38.6049152"></polygon>
+            </g>
+            <g id="Group">
+                <polygon id="Path" fill="#FDD231" points="33.151812 0 14.4661778 1.9754199 13.4281339 21.3950706"></polygon>
+                <polygon id="Path" fill="#FDD231" transform="translate(43.013549, 10.697535) scale(-1, 1) translate(-43.013549, -10.697535) " points="52.8753884 0 34.1897541 1.9754199 33.1517102 21.3950706"></polygon>
+                <polygon id="Path" fill="#FDAD00" transform="translate(59.070445, 11.685245) scale(-1, 1) translate(-59.070445, -11.685245) " points="51.8372723 21.3950706 66.3036187 1.9754199 65.2654061 21.3950706"></polygon>
+                <polygon id="Path" fill="#FDAD00" points="0 21.3950706 14.4661778 1.9754199 13.4281339 21.3950706"></polygon>
+                <polygon id="Path" fill="#FEEEB7" points="33.151812 0 13.4281339 21.3950706 52.8754902 21.3950706"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
