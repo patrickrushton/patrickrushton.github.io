@@ -1,5 +1,8 @@
 window.addEventListener("load", function () {
 
+  var spy = new Gumshoe('nav a')
+	var scroll = new SmoothScroll('a[href*="#"]');
+  
   new Glider(document.querySelector("#selected-work .carousel"), {
     slidesToShow: 1.1,
     slidesToScroll: 1,
