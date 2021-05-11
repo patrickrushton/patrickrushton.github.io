@@ -1,34 +1,3 @@
-section {
-    width: 100%;
-    padding: 5rem 0;
-    /* padding: 5rem 1rem; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-}
-
-section > * {
-    max-width: var(--maximum-width);
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.section-description {
-    max-width: 40rem;
-    text-align: center;
-    margin: 0 auto 4rem auto;
-}
-
-@media screen and (min-width: 700px) {
-    section {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-}
-
-
 /* Intro */
 #intro {
     display: flex;
@@ -55,8 +24,6 @@ section > * {
     }
 
 }
-
-
 
 /* What I do */
 #what-i-do {
@@ -93,9 +60,7 @@ section > * {
     }
 }
 
-
 /* Selected work */
-
 #selected-work {
     background-color: var(--dark-background);
 
@@ -170,7 +135,7 @@ section > * {
     }
 }
 
-/* Tools section */
+/* Tools */
 #tools {
     display: flex;
     flex-direction: column;
@@ -202,9 +167,7 @@ section > * {
     }
 }
 
-
 /* Recommendations */
-
 #recommendations {
     background-color: #0A66C2;
 }
@@ -282,7 +245,6 @@ section > * {
     padding: 0 2rem;
 }
 
-
 @media screen and (min-width: 600px) {
     .clients-grid {
         grid-template-columns: repeat(4, 1fr);
@@ -297,7 +259,6 @@ section > * {
 }
 
 /* Contact */
-
 #contact {
     background-color: var(--dark-background);
     display: flex;
