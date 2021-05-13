@@ -195,7 +195,7 @@
     font-size: 1rem;
     color: var(--light-mid-text);  
     text-align: center; 
-    margin-top: 2rem;
+    margin: 2rem 0;
 }
 
 .recommendation cite {
@@ -273,6 +273,10 @@
     display: block;
     margin-bottom: 2rem;
     border-radius: 50%;
+}
+
+.contact-links p {
+    margin: 0.5rem 0;
 }
 
 .contact-links i {

@@ -5,9 +5,10 @@
     --dark-text: rgba(0,0,0,0.9);
     --dark-mid-text:  rgba(0,0,0,0.6);
     --light-text: rgba(255,255,255,1); 
-    --light-mid-text: rgba(255,255,255,0.8);
-    --primary-accent: rgb(60, 179, 167);
+    --light-mid-text: rgba(255,255,255,0.9);
+    --primary-accent: rgb(60,179,167);
     --dark-background: rgb(65,65,65);
+    --tint-background: rgb(249,249,249);
 }
 
 
@@ -21,13 +22,13 @@ body {
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
     line-height: 1.4;
-    color: var(--dark-mid-text);
+    color: var(--dark-text);
 }
 
 h1 { 
     font-size: 3rem;
     font-weight: bold;
-    color: var(--dark-text);
+    /* color: var(--dark-text); */
     text-align: center;
     margin-bottom: 0;
 }
@@ -35,21 +36,26 @@ h1 {
 h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: var(--dark-text);
     text-align: center;
-    margin: 2rem auto 1rem auto;
+    /* margin-bottom: 1rem; */
+    margin: 0 auto 1rem auto;
 }
 
 h3 {
     font-size: 1.75rem;
     font-weight: bold;
-    color: var(--dark-text);
-    margin: 10px 0;
+    /* color: var(--dark-text); */
+    margin: 0 auto 0.5rem auto;
 }
 
-section p {
+section p, section ul {
     max-width: 45rem;
+    color: var(--dark-mid-text);
     margin-bottom: 1rem;
+}
+
+section li {
+    margin: 0.5rem 3rem 0.5rem 3rem
 }
 
 a {
@@ -61,7 +67,7 @@ a {
     color: var(--light-text);
 }
 
-.inverse p {
+.inverse p, .inverse ul {
     color: var(--light-mid-text);
 }
 

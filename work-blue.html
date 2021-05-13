@@ -3,7 +3,7 @@
     <head>
         <title>Novility Blue - UX Portfolio Case</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="css/reset.css" rel="stylesheet" />
+        <link href="css/normalize.css" rel="stylesheet" />
         <link
         href="https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic"
         rel="stylesheet"
@@ -19,7 +19,7 @@
         <style>
             header {
                 margin-top: 4rem;
-                box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
             }
 
             header img {
@@ -28,6 +28,15 @@
                 width: 100%;
                 margin: 0 auto;
             }
+
+            section:nth-child(odd) {
+                background-color: var(--tint-background);
+            }
+
+            .outcomes {
+                background-color: #26ABF4;
+            }
+
         </style>
     </head>
     <body>
@@ -36,19 +45,23 @@
             <h1>Novility BLUE</h1>
             <img src="images/work-blue-hero.png">
         </header>
-        <section class="tint">
+        <section>
             <p>A Property Management System (PMS) can be thought of as the central nervous system of a hotel. The enterprise software handles everything from reservations and billing to coordinating room allocation and cleaning. There is no shortage of PMS solutions on the market but users we interviewed told us that these legacy applications take weeks to learn and are universally loathed for their clunky, confusing UIs and convoluted flows.</p>
             <p>At Novility we set out to create a new SaaS PMS from the ground up using the latest technology stack and placing the user at the centre of the design approach. </p>
+            </section>
+            <section>
             <h2>Role</h2>
             <p>I joined a scrum team of developers and business analysts and after a couple of months was asked by the product owner to take on the role of lead designer. I was responsible for the overall design direction, coaching the other UX designers and user-researchers as well as contributing to the detailed design work and managing the component-based design system to ensure that our designs were consistent.</p>
+        </section>
+        <section>
             <h2>Iterative design</h2>
-            <p>We took an iterative approach to creating the product, initially tackling the core functionality one module at a time so that we had a good basis on which to test and innovate. Each module began with an initial research & analysis phase consisting of interviewing users of existing solutions about their pain points and documenting business processes. This fed into an ideation session where all members of the team collaborated to sketch out some initial directions, followed by cycles of detailed design, prototyping and user testing.</p>
-            <p>Basing the design around user goals and iterating on user feedback allowed us to optimise the UI so that user could complete processes efficiently and without the repetitive hacks and workarounds they were used to carrying out on legacy systems.</p>
-
             <div class="break-out">
                 <img src="images/work-blue-ideation.png" alt="Ideation sketches">
             </div>
-
+            <p>We took an iterative approach to creating the product, initially tackling the core functionality one module at a time so that we had a good basis on which to test and innovate. Each module began with an initial research & analysis phase consisting of interviewing users of existing solutions about their pain points and documenting business processes. This fed into an ideation session where all members of the team collaborated to sketch out some initial directions, followed by cycles of detailed design, prototyping and user testing.</p>
+            <p>Basing the design around user goals and iterating on user feedback allowed us to optimise the UI so that user could complete processes efficiently and without the repetitive hacks and workarounds they were used to carrying out on legacy systems.</p>
+            </section>
+        <section>
             <h2>Optimizing the reservation flow</h2>
             <p>One example of this is approach can be seen in the design of the reservations module. On legacy systems, taking a reservation is a convoluted process that requires users to jump between multiple popup windows to retrieve a guest's details, check availability and prices and take a deposit payment. Our first attempt to streamline this was to collapse all of these steps into a single page. Feedback from user testing was generally positive but uncovered a few problems with the approach - a user could miss a crucial step or get lost after switching back from another task (hotel employees are always multi-tasking).</p>
 
@@ -56,6 +69,30 @@
                 <img src="images/work-blue-reservation-flow.png" alt="Ideation sketches">
             </div>
 
-        </section>
-    </body>
-</html>
+            <p>By observing users who were asked to create a reservation in our prototype, I was able to determine three key steps. Stay details, guest details, and payment and confirmation. Creating a flow in this order provided a number of advantages:</p>
+            <ul>
+                <li>the process was broken down into sets of interactions that fit the users’ mental model for the main stages of creating a reservation</li>
+                <li>each step could be validated individually and feedback provided to the user about any possible problems with their choices or missing inputs</li>
+                
+                <li>the summary side-panel to the right functioned as both an indication of progress and as navigation in case any changes needed to be made to a reservation</li>
+            </ul>
+            </section>
+            <section>
+                <h2>Collaboration and design systems</h2>
+                <p>As the project progressed, we expanded the design team by recruiting a senior UX designer and two UX researchers. I was asked to take on the role of design lead and one of my first challenges was to address a lack of consistency in our output. I set about creating a design system - a library of user interface components and guidelines about how and when to use them.</p>
+
+<p>So as not to lose momentum in our planning, I created the design system on-the-fly; each time a new UI component was needed, we would discuss the best approach together as a team, and I would document the decisions in the shared library.</p>
+<div class="break-out">
+<img src="images/work-blue-design-system.png" alt="Screenshot of the design system"></div>
+            </section>
+            <section class="outcomes inverse">
+                <h2>Outcomes</h2>
+                <p>
+                    In the initial 12-month phase, the team succeeded in completing the full “functional skeleton” of the product; all the core user-flows were wireframed (520 screens in all!) and these were implemented in front- and back-end. We carried out a total of 75 user testing sessions and gathered a lot of constructive feedback from users and product stakeholders and had been able to iterate the design to address the highest priority findings.</p>
+                    <p>With a working MVP, we were now ready to begin rollout of an alpha version to partner hotels who would put the product through its paces in a real-life environment. The next phase in the roadmap was to roll out additional features and continue iterating in response to user feedback. With a comprehensive, component-based design system now in place, we were in a great position to scale-up the product while maintaining a consistent design and cohesive user-experience.</p>
+                    <div class="break-out">
+                        <img src="images/work-blue-housekeeping-worksheet.png" alt="Screenshot of the housekeeping worksheet manager">
+                    </div>
+            </section>
+        </body>
+        </html>
