@@ -125,57 +125,57 @@
 
 <script>
   $(document).ready(function () {
-// Optimalisation: Store the references outside the event handler:
+    // Optimalisation: store the references outside the event handler
     var $window = $(window);
-    var $pane = $('#pane1');
+    var $pane = $("#pane1");
     var $grid = false;
 
+    // On wider viewports, the thumbnails are wrapped in a grid 
     function checkWidth() {
-        var windowsize = $window.width();
-        if (windowsize >= 900 && $grid == false) {
-          $grid = true;
-          $(".thumbnail").wrapAll("<div class='thumbnail-grid' />");
-
-        } else if (windowsize < 900 && $grid == true) {
-          $grid = false;
-          $(".thumbnail").unwrap(".thumbnail-grid");
-        }
+      var windowsize = $window.width();
+      if (windowsize >= 900 && $grid == false) {
+        $grid = true;
+        $(".thumbnail").wrapAll("<div class='thumbnail-grid' />");
+      } else if (windowsize < 900 && $grid == true) {
+        $grid = false;
+        $(".thumbnail").unwrap(".thumbnail-grid");
+      }
     }
     // Execute on load
     checkWidth();
     // Bind event listener
     $(window).resize(checkWidth);
 
+    // Import and initialize the glider
     $.getScript(
-  "https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.js"
-).done(() => {
-  new Glider(document.querySelector(".work-carousel .carousel"), {
-          slidesToShow: 1.1,
-          slidesToScroll: 1,
-          duration: 1,
-          dots: ".work-carousel .dots",
-          arrows: {
-            prev: ".work-carousel .glider-prev",
-            next: ".work-carousel .glider-next",
+      "https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.js"
+    ).done(() => {
+      new Glider(document.querySelector(".work-carousel .carousel"), {
+        slidesToShow: 1.1,
+        slidesToScroll: 1,
+        duration: 1,
+        dots: ".work-carousel .dots",
+        arrows: {
+          prev: ".work-carousel .glider-prev",
+          next: ".work-carousel .glider-next",
+        },
+        responsive: [
+          {
+            breakpoint: 400,
+            settings: {
+              slidesToShow: 2.2,
+              slidesToScroll: 2,
+            },
           },
-          responsive: [
-            {
-              breakpoint: 400,
-              settings: {
-                slidesToShow: 2.2,
-                slidesToScroll: 2,
-              },
+          {
+            breakpoint: 900,
+            settings: {
+              slidesToShow: 0.5,
+              slidesToScroll: 0.5,
             },
-            {
-              breakpoint: 900,
-              settings: {
-                slidesToShow: 0.5,
-                slidesToScroll: 0.5,
-              },
-            },
-          ],
-        });
-});
+          },
+        ],
       });
-  
+    });
+  });
 </script>
