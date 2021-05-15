@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-    --maximum-width: 1100px;
+    --maximum-width: 1000px;
     /* --dark-heading: rgba(0,0,0,0.95); */
     --dark-text: rgba(0,0,0,0.9);
     --dark-mid-text:  rgba(0,0,0,0.6);
@@ -123,7 +123,7 @@ section > * {
 }
 
 @media screen and (min-width: 700px) {
-    section {
+    section > * {
         padding-left: 2rem;
         padding-right: 2rem;
     }
@@ -187,7 +187,7 @@ section > * {
 
 @media screen and (min-width: 700px) {
     nav {
-        padding: 0 2rem;
+        /* padding: 0 2rem; */
     }
     nav ul li:last-child:after {
         content: ""; /* No need for extra spaces */
@@ -238,15 +238,13 @@ section > * {
     margin-bottom: 2rem;
 }
 
-.work-carousel {
-    padding-left: 0;
-    padding-right: 0;
+.work-carousel  {
+    padding: 0;
 }
 
 .thumbnail {
     position: relative;
     scroll-snap-align: center;
-    /* margin: 0 1rem; */
     padding: 0 0.5rem;
 }
 
@@ -264,7 +262,6 @@ section > * {
     bottom: 0;
     left: 0.5rem;
     right: 0.5rem;
-    /* width: 100%; */
     overflow: hidden;
     background-color: rgba(255,255,255,1);
     border-radius: 0 0 0.5rem 0.5rem;
@@ -283,40 +280,13 @@ section > * {
     margin: 0px 1rem 0.7rem 1rem;
 }
 
-/* @media screen and (max-width: 900px) {
-    .work-carousel {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-} */
 
 
 @media screen and (min-width: 400px) {
     .thumbnail {
         scroll-snap-align: start;
     }
-}
-
-@media screen and (min-width: 900px) {
-    .thumbnail {
-        scroll-snap-align: center;
-    }
-
-    .thumbnail-grid {
-        display: grid;
-        width: 100%;
-        padding: 0 0.5rem;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 1rem;
-    }
-
-    .thumbnail {
-        width: 100%;
-        height: auto;
-    }
-
+    
     .thumbnail-label {
         max-height: 0; /* Using max-height because regular height does not transition smoothly */
         opacity: 0;
@@ -332,6 +302,25 @@ section > * {
     }
 }
 
+@media screen and (min-width: 1000px) {
+    
+    .work-carousel  {
+        padding: 0 0.5rem;
+    
+    }
+    .thumbnail-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem 0;
+    }
+
+    .thumbnail {
+        scroll-snap-align: center;
+        width: 100%;
+        height: auto;
+    }
+}
 
 
 /* Carousels */
@@ -345,7 +334,7 @@ section > * {
     scroll-snap-type: x mandatory;
 }
 
-.glider-prev,.glider-next {
+.glider-prev, .glider-next {
     display: none;
 }
 
