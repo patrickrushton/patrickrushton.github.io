@@ -230,10 +230,17 @@ section > * {
 /* Selected work */
 #selected-work, #more-work {
     background-color: var(--dark-background);
+    padding-left: 0;
+    padding-right: 0;
 }
 
 #more-work h2 {
     margin-bottom: 2rem;
+}
+
+.work-carousel {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .thumbnail {
@@ -276,15 +283,25 @@ section > * {
     margin: 0px 1rem 0.7rem 1rem;
 }
 
-@media screen and (max-width: 699px) {
+/* @media screen and (max-width: 900px) {
     .work-carousel {
         padding-left: 0;
         padding-right: 0;
     }
 
+} */
+
+
+@media screen and (min-width: 400px) {
+    .thumbnail {
+        scroll-snap-align: start;
+    }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
+    .thumbnail {
+        scroll-snap-align: center;
+    }
 
     .thumbnail-grid {
         display: grid;
@@ -300,17 +317,12 @@ section > * {
         height: auto;
     }
 
-
-    .thumbnail {
-        scroll-snap-align: start;
-        /* margin: 0 0.5rem; */
-    }
-
     .thumbnail-label {
         max-height: 0; /* Using max-height because regular height does not transition smoothly */
         opacity: 0;
         transition: all 0.5s ease; 
     }
+
     .thumbnail:hover .thumbnail-label {
         opacity: 1;
         max-height: 100px;
@@ -337,6 +349,7 @@ section > * {
     display: none;
 }
 
+/* Add carousel arrows */
 @media screen and (min-width: 1100px) {
 
     .glider-prev,.glider-next {
