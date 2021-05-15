@@ -125,6 +125,27 @@
 
 <script>
   $(document).ready(function () {
+// Optimalisation: Store the references outside the event handler:
+    var $window = $(window);
+    var $pane = $('#pane1');
+    var $grid = false;
+
+    function checkWidth() {
+        var windowsize = $window.width();
+        if (windowsize >= 900 && $grid == false) {
+          $grid = true;
+          $(".thumbnail").wrapAll("<div class='thumbnail-grid' />");
+
+        } else if (windowsize < 900 && $grid == true) {
+          $grid = false;
+          $(".thumbnail").unwrap(".thumbnail-grid");
+        }
+    }
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+    $(window).resize(checkWidth);
+
     $.getScript(
   "https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.js"
 ).done(() => {
@@ -148,8 +169,8 @@
             {
               breakpoint: 900,
               settings: {
-                slidesToShow: 3.2,
-                slidesToScroll: 3,
+                slidesToShow: 0.5,
+                slidesToScroll: 0.5,
               },
             },
           ],

@@ -286,6 +286,21 @@ section > * {
 
 @media screen and (min-width: 700px) {
 
+    .thumbnail-grid {
+        display: grid;
+        width: 100%;
+        padding: 0 0.5rem;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .thumbnail {
+        width: 100%;
+        height: auto;
+    }
+
+
     .thumbnail {
         scroll-snap-align: start;
         /* margin: 0 0.5rem; */
