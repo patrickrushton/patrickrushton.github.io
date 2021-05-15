@@ -87,14 +87,13 @@ a {
     box-sizing: border-box;
   }
 
-.break-out {
-    max-width: var(--maximum-width);
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
 img {
     max-width: 100%;
+}
+
+
+header {
+    text-align: center;
 }
 
 section {
@@ -114,6 +113,13 @@ section > * {
     max-width: 40rem;
     text-align: center;
     margin: 0 auto 4rem auto;
+}
+
+
+.break-out {
+    max-width: var(--maximum-width);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 @media screen and (min-width: 700px) {
@@ -187,6 +193,39 @@ section > * {
         content: ""; /* No need for extra spaces */
     }
 }
+
+
+.project-info {
+    display: inline-grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    column-gap: 1.5rem;
+    margin: 2rem 1rem;
+    padding: 1rem 1.5rem;
+    /* min-width: 45rem; */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    /* background-color: var(--tint-background); */
+    text-align: left;
+    font-size: 1rem;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.project-info dt {
+    grid-row: 1;
+    color: var(--dark-mid-text);
+}
+
+.project-info dd {
+    grid-row: 2;
+    margin: 0;
+}
+
+.project-info dt:not(:last-of-type), .project-info dd:not(:last-of-type) {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding-right: 1.5rem
+}
+
 
 /* Selected work */
 #selected-work, #more-work {
