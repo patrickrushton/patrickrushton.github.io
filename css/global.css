@@ -47,7 +47,7 @@ h3 {
   margin: 0 auto 0.5rem auto;
 }
 
-section p,
+header p, section p,
 section ul {
   max-width: 700px;
   color: var(--dark-mid-text);
@@ -98,7 +98,7 @@ header {
   text-align: center;
 }
 
-section {
+section, footer {
   width: 100%;
   padding: 5rem 0;
 }
@@ -226,7 +226,7 @@ nav a {
   grid-template-rows: auto auto;
   justify-content: center;
   column-gap: 1.5rem;
-  margin: 2rem 1rem;
+  margin: 2rem 1rem 0 1rem;
   padding: 1rem 1.5rem;
   /* min-width: 45rem; */
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -254,7 +254,7 @@ nav a {
 }
 
 /* Video players */
-.videoWrapper {
+.fit, .videoWrapper {
   padding: 0;
 }
 
@@ -274,8 +274,9 @@ nav a {
 }
 
 @media screen and (min-width: 1000px) {
-  .videoWrapper {
+  .fit, .videoWrapper {
     padding: 0 2rem;
+    margin: 2rem auto;
   }
 }
 
