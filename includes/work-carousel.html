@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <div class="carousel-container">
-  <div class="carousel">
+  <div class="thumbnail-carousel">
     <div class="thumbnail">
       <a href="work-blue.html">
         <img src="images/thumb-blue.jpg" alt="Novility Blue" />
@@ -21,7 +21,7 @@
       </div>
     </div>
     <div class="thumbnail">
-      <a href="">
+      <a href="work-samsam.html">
         <img src="images/thumb-samsam.jpg" alt="SamSam" />
       </a>
       <div class="thumbnail-label">
@@ -150,7 +150,7 @@
     $.getScript(
       "https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.js"
     ).done(() => {
-      new Glider(document.querySelector(".work-carousel .carousel"), {
+      new Glider(document.querySelector(".work-carousel .thumbnail-carousel"), {
         slidesToShow: 1.1,
         slidesToScroll: 1,
         duration: 1,
