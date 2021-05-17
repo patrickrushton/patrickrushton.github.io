@@ -37,7 +37,7 @@ h2 {
   font-weight: bold;
   text-align: center;
   /* margin-bottom: 1rem; */
-  margin: 0 auto 1rem auto;
+  margin: 1rem auto 1rem auto;
 }
 
 h3 {
@@ -51,8 +51,16 @@ header p, section p,
 section ul {
   max-width: 700px;
   color: var(--dark-mid-text);
-  margin: 2rem auto;
+  margin: 1rem auto 1rem auto;
 }
+/* 
+section p:first-child {
+  margin-top: 0;
+} */
+
+/* section p:last-child {
+  margin-bottom: 0;
+} */
 
 section li {
   margin: 0.5rem 3rem 0.5rem 3rem;
@@ -100,7 +108,7 @@ header {
 
 section, footer {
   width: 100%;
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 
 section > * {
@@ -198,7 +206,7 @@ nav a {
 
 .links {
     text-align: center;
-    margin-top: 2rem;
+    margin: 2rem auto 1rem auto;
 }
 
 .secondary-button {
@@ -206,9 +214,9 @@ nav a {
   border-radius: 2rem;
   padding: 0.75rem 1.25rem;
   color: var(--primary-accent);
-  background: white;
+  background-color: white;
   font-size: 1rem;
-  transition-duration: 0.4s;
+  transition: background-color 0.2s;
 }
 
 .secondary-button i {
@@ -254,7 +262,7 @@ nav a {
 }
 
 /* Video players */
-.fit, .videoWrapper {
+.bleed, .videoWrapper {
   padding: 0;
 }
 

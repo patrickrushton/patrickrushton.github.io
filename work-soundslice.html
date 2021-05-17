@@ -12,32 +12,29 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"
     />
-    <link href="css/glider.css" rel="stylesheet" />
     <link href="css/global.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.js"></script>
     <script src="js/global.js"></script>
-    <script>
-      window.addEventListener("load", function () {
-        new Glider(document.querySelector(".screenshots .carousel"), {
-          slidesToShow: 1,
-          duration: 1,
-          dots: ".screenshots .dots",
-          arrows: {
-            prev: ".screenshots .glider-prev",
-            next: ".screenshots .glider-next",
-          },
-        });
-
-      });
-    </script>
+   
     <style>
       section:nth-child(even) {
         background-color: var(--tint-background);
       }
-      .fit img {
+      section img {
         border-radius: 0.5rem;
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+      .ui-enhancements2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+      .landing {
+        display: grid;
+        grid-template-columns: 1200fr 365fr;
+        gap: 1rem;
       }
 
     </style>
@@ -55,99 +52,36 @@
         <dt>Role</dt>
         <dd>UX/UI Design</dd>
       </dl>
-    </header>
    <section>
       <p>
-        Soundslice is a web-based music-learning platform that helps musicians learn pieces of music by synchronizing notation with video and audio, and providing tools for looping, slowing down and transcribing music. The software is used to deliver Soundslice's own courses, by teachers as a way to supplement their lessons, and by third-parties who license the technology and embed it in their own applications.
+        Soundslice is a web-based music-learning platform that helps musicians learn pieces of music by synchronizing notation with video and audio, and providing tools for looping, slowing down and transcribing music. The software is used to deliver Soundslice’s own courses, by teachers as a way to supplement their lessons, and by third-parties who license the technology and embed it in their own applications.
       </p>
+      <div><img src="images/work-soundslice-store.png" alt="Screenshot of the Soundslice Store"></div>
       <p>
-      The developers of Soundslice approached me to help them with some user-interface challenges that they have been struggling with, and to design a new landing page to help market the embeddable product to potential licensing partners.
+      The developers of Soundslice approached me to help them with some user-interface challenges that they have been struggling with, and to design a new landing page to help market the  product to potential licensing partners.
     </p>
   </section>     
-    <section>
+    <section class="ui-enhancements">
       <h2>User-interface enhancements</h2>
-      <div class="fit"><img src="images/work-soundslice-crop.png" alt="Screenshot of the Soundslice cropping UI"></div>
       <p>
         When teachers are transcribing a piece of music, they often need to isolate a section from a longer piece of music but there was no straightforward way of doing so in the user-interface. I designed an intuitive solution that allows the user to drag start- and end-braces in the waveform display.
       </p>
-      <p>
-        The content can be filtered in different ways. Select a subject or
-        filter by clicking on the world map. Teachers have there own section
-        with lesson ideas and an archive of teaching material. After testing the
-        site with schoolchildren, I did some further design to make the
-        connection between the map, filters and content thumbnails more obvious.
-        It was also interesting to see from analytics data how the search field
-        is a popular starting point. We improved the search functionality with
-        instant (as you type) results, and suggestions for misspelled words to
-        help children find countries with difficult spelling.
-      </p>
-      <div class="wireframes carousel-container">
-        <div class="carousel">
-          <div>
-            <img
-              src="images/work-samsam-wireframe1.png"
-              alt="Samsam wireframe"
-            />
-          </div>
-          <div>
-            <img
-              src="images/work-samsam-wireframe2.png"
-              alt="Samsam wireframe"
-            />
-          </div>
-          <div>
-            <img
-              src="images/work-samsam-wireframe3.png"
-              alt="Samsam wireframe"
-            />
-          </div>
-        </div>
-        <button class="glider-prev">
-          <i class="fa fa-chevron-left"></i>
-        </button>
-        <button class="glider-next">
-          <i class="fa fa-chevron-right"></i>
-        </button>
-        <div role="tablist" class="dots"></div>
+      <div><img src="images/work-soundslice-crop.png" alt="Screenshot of the Soundslice cropping UI"></div>
+      <p>Soundslice provides guitarists with a realtime fretboard display but didn't provide the learner with guidance on fingering. I designed a straightforward colour-coding system as well as a UI for the teacher to specify which finger to be used for each note.</p>
+      <div class="ui-enhancements2">
+        <img src="images/work-soundslice-editor-fingering.png" alt="Screenshot of the fingering editor">
+        <img src="images/work-soundslice-bookmarks-menu.png" alt="Screenshot of the work-soundslice-bookmarks-menu">
       </div>
-      <div class="links">
-        <a class="secondary-button" href="https://www.samsam.net" target="_blank">Visit the site at www.samsam.net<i class="fas fa-external-link-alt"></i></a>
+
+    </section>
+
+      <section>
+        <h2>Responsive landing page</h2>
+        <div class="landing">
+          <img src="images/work-soundslice-marketing-wide.png" alt="Soundslice landing page design">
+          <img src="images/work-soundslice-marketing-narrow.png" alt="Mobile version of the landing page">
         </div>
-    </section>
-    <section>
-      <h2>User-generated content</h2>
-      <div class="videoWrapper">
-          <div class="videoSizer">
-        <iframe src="https://player.vimeo.com/video/551432414?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1600" height="900" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="ReportersClub"></iframe>
-    </div>
-</div>
-
-      <p>
-        After launch of the new publishing platform, Samsam approached us to
-        think about ideas for how we can engage kids and schools. I helped
-        facilitate several workshops and creative sessions which lead to the
-        Reportersclub concept.
-      </p>
-
-      <p>
-        The idea is to provide school classes with a tool that goes beyond just
-        another social network or user-generated-content platform. The site
-        provides specific features that help kids work together in teams, and
-        challenges them with subjects to investigate in the form of "Missions".
-      </p>
-
-      <p>
-        As an interaction designer is was exciting to work on complex
-        collaborative tools and make them accessible, yet sufficiently rich in
-        possibilities for self-expression, for the younger users. I prototyped
-        the site and mobile app using Axure while working together with
-        developers with an agile approach. I also helped out with some of the
-        visual design tasks during the later stages of production.
-    </p>
-    <div class="links">
-    <a class="secondary-button" href="https://www.patrickrushton.com/prototypes/samsam-reportersclub-prototype/#p=introduction" target="_blank">Open the Axure prototype<i class="fas fa-external-link-alt"></i></a>
-    </div>
-    </section>
+      </section>
     <footer id="more-work" class="inverse"></footer>
   </body>
 </html>
