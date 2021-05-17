@@ -19,71 +19,65 @@
     <script src="js/global.js"></script>
     <script>
       window.addEventListener("load", function () {
-      new Glider(document.querySelector(".screenshots .carousel"), {
-      slidesToShow: 1,
-    slidesToScroll: 1,
-    duration: 1,
-    dots: ".screenshots .dots",
-    arrows: {
-      prev: ".screenshots .glider-prev",
-      next: ".screenshots .glider-next",
-    }
-  });
-});
+        new Glider(document.querySelector(".screenshots .carousel"), {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          duration: 1,
+          dots: ".screenshots .dots",
+          arrows: {
+            prev: ".screenshots .glider-prev",
+            next: ".screenshots .glider-next",
+          },
+        });
+      });
     </script>
     <style>
-
       header .container {
-          max-width: 500px;
-          margin: 4rem auto -4rem auto;
-        }
-        
-        header img {
-            display: block;
-            width: 100%;
-            height: auto;
-        }   
-    
-        section:nth-child(odd) {
-            background-color: var(--tint-background);
-        }
+        max-width: 500px;
+        margin: 4rem auto -4rem auto;
+      }
 
-        .screenshots {
-          padding: 0;  
-        }
+      header img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
 
-        .background {
-          width: 100%;
-          max-width: 100%;
-          background-color: rgb(118, 205, 242);
+      section:nth-child(odd) {
+        background-color: var(--tint-background);
+      }
 
-        }
+      .screenshots {
+        padding: 0;
+      }
 
-        .carousel-container {
-          max-width: var(--maximum-width);
-        }
-
-        .carousel img{
-          scroll-snap-align: center;
-        }
+      .background {
+        width: 100%;
+        max-width: 100%;
+        background-color: rgb(118, 205, 242);
+      }
 
     </style>
   </head>
+
   <body>
-      <nav></nav>
-      <header>
-        <h1>Goed Bezig</h1>
-        <dl class="project-info">
-          <dt>Client</dt>
-          <dd>Arbo Unie</dd>
-          <dt>Platform</dt>
-          <dd>Native iOS &amp; Android app</dd>
-          <dt>Role</dt>
-          <dd>Interaction & Visual Design</dd>
-        </dl>
-        <div class="container">
-            <img src="images/work-goed-bezig-iphone.png" alt="Mockup of an iPhone running the Goed Bezig app">
-        </div>
+    <nav></nav>
+    <header>
+      <h1>Goed Bezig</h1>
+      <dl class="project-info">
+        <dt>Client</dt>
+        <dd>Arbo Unie</dd>
+        <dt>Platform</dt>
+        <dd>Native iOS &amp; Android app</dd>
+        <dt>Role</dt>
+        <dd>Interaction & Visual Design</dd>
+      </dl>
+      <div class="container">
+        <img
+          src="images/work-goed-bezig-iphone.png"
+          alt="Mockup of an iPhone running the Goed Bezig app"
+        />
+      </div>
     </header>
     <section>
       <p>
@@ -116,10 +110,20 @@
     </section>
     <section class="screenshots inverse">
       <div class="background">
-          <div class="carousel-container">
+        <div class="carousel-container">
           <div class="carousel">
-              <img src="images/work-goed-bezig1.png" alt="Screenshots of the smartphone app">
-              <img src="images/work-goed-bezig2.png" alt="Screenshots of the iPad app">
+            <div>
+              <img
+                src="images/work-goed-bezig1.png"
+                alt="Screenshots of the smartphone app"
+              />
+            </div>
+            <div>
+              <img
+                src="images/work-goed-bezig2.png"
+                alt="Screenshots of the iPad app"
+              />
+            </div>
           </div>
           <button class="glider-prev">
             <i class="fa fa-chevron-left"></i>
