@@ -86,6 +86,10 @@
     margin-top: 0;
 }
 
+.tool p {
+    margin: 0;
+}
+
 @media screen and (min-width: 700px) {
     .tools-grid {
         grid-template-columns: 1fr 1fr;
