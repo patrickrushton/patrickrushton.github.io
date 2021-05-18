@@ -331,6 +331,7 @@ nav a {
   position: relative;
   scroll-snap-align: center;
   padding: 0 0.5rem;
+  /* margin: 0 0.5rem 0 0.5rem; */
 }
 
 .thumbnail img {
@@ -391,14 +392,20 @@ nav a {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 1rem 0;
-    /* padding: 0; */
+    gap: 1rem;
   }
 
   .thumbnail {
-    scroll-snap-align: center;
     width: 100% !important; /* Override width set previously by Glider.js */
     height: auto;
+    padding: 0;
+  }
+
+  .thumbnail-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
 
@@ -418,6 +425,10 @@ nav a {
 
 .carousel div {
   scroll-snap-align: start;
+}
+
+.carousel img {
+  display: block; /* fixes bottom margin */
 }
 
 .glider-prev,
