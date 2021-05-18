@@ -125,18 +125,19 @@
 
 <script>
   $(document).ready(function () {
-    // Optimalisation: store the references outside the event handler
+    // Optimization: store the references outside the event handler
     var $window = $(window);
     var $pane = $("#pane1");
     var $grid = false;
 
     // On wider viewports, the thumbnails are wrapped in a grid 
     function checkWidth() {
-      var windowsize = $window.width();
-      if (windowsize >= 1000 && $grid == false) {
+      var windowSize = $window.width();
+      if (windowSize >= 1000 && $grid == false) {
         $grid = true;
         $(".thumbnail").wrapAll("<div class='thumbnail-grid' />");
-      } else if (windowsize < 1000 && $grid == true) {
+        // Glider(document.querySelector(".thumbnail-carousel")).destroy();
+      } else if (windowSize < 1000 && $grid == true) {
         $grid = false;
         $(".thumbnail").unwrap(".thumbnail-grid");
       }

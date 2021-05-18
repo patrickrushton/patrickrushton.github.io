@@ -229,36 +229,55 @@ nav a {
 
 /* Work pages */
 
+/* Project info box */
 .project-info {
   display: inline-grid;
-  grid-template-rows: auto auto;
-  justify-content: center;
-  column-gap: 1.5rem;
+  grid-template-columns: auto auto;
   margin: 2rem 1rem 0 1rem;
   padding: 1rem 1.5rem;
-  /* min-width: 45rem; */
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
-  /* background-color: var(--tint-background); */
+  column-gap: 1rem;
+  row-gap: 0.5rem;
   text-align: left;
   font-size: 1rem;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .project-info dt {
-  grid-row: 1;
+  grid-column: 1;
   color: var(--dark-mid-text);
 }
 
 .project-info dd {
-  grid-row: 2;
+  grid-column: 2;
   margin: 0;
+  column-gap: 1.5rem;
 }
 
-.project-info dt:not(:last-of-type),
-.project-info dd:not(:last-of-type) {
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-  padding-right: 1.5rem;
+@media screen and (min-width: 700px) {
+
+  .project-info {
+    grid-template-rows: auto auto;
+    row-gap: 0;
+  }
+  
+  .project-info dt {
+    grid-column: auto;
+    grid-row: 1;
+  }
+  
+  .project-info dd {
+    grid-column: auto;
+    grid-row: 2;
+    margin: 0;
+  }
+  
+  .project-info dt:not(:last-of-type),
+  .project-info dd:not(:last-of-type) {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding-right: 1.5rem;
+  }
 }
 
 /* Video players */
@@ -367,19 +386,18 @@ nav a {
 }
 
 @media screen and (min-width: 1000px) {
-  .work-carousel {
-    padding: 0 0.5rem;
-  }
+
   .thumbnail-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 1rem 0;
+    /* padding: 0; */
   }
 
   .thumbnail {
     scroll-snap-align: center;
-    width: 100%;
+    width: 100% !important; /* Override width set previously by Glider.js */
     height: auto;
   }
 }
