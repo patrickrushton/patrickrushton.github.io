@@ -423,7 +423,7 @@ nav a {
   scroll-snap-type: x mandatory;
 }
 
-.carousel div {
+.carousel > * {
   scroll-snap-align: start;
 }
 
