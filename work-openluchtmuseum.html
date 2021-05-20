@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Openluchtmuseum - UX Portfolio Case</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/glider.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.js"></script>
+    <script src="js/global.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        new Glider(document.querySelector(".wireframes .carousel"), {
+          slidesToShow: 1,
+          duration: 1,
+          dots: ".wireframes .dots",
+          arrows: {
+            prev: ".wireframes .glider-prev",
+            next: ".wireframes .glider-next",
+          },
+        });
+      });
+    </script>
+    <style>
+      section:nth-child(even) {
+        background-color: var(--tint-background);
+      }
+      .wireframes {
+        margin-top: 3rem;
+      }
+      .wireframes .carousel div {
+        padding: 0 1rem; 
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <nav></nav>
+    <header>
+      <h1>Restart - Educational Game</h1>
+      <dl class="project-info">
+        <dt>Client</dt>
+        <dd>Nederlands Openluchtmuseum</dd>
+        <dt>Platform</dt>
+        <dd>iPad Game &amp; Digiboard Site</dd>
+        <dt>Role</dt>
+        <dd>UX &amp; Front-End Development</dd>
+      </dl>
+    </header>
+    <section>
+      <div class="videoWrapper">
+        <div class="videoSizer">
+      <iframe src="https://player.vimeo.com/video/552824019?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1600" height="900" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Restart Game"></iframe>
+  </div>
+  </div>
+      <p>
+        Restart is an educational programme from the Netherlands Open Air Museum in Arnhem. The programme aims to create more awareness in schoolchildren around the theme of migration. In a fun an interactive way, schoolchildren experience what it is like to be a migrant.</p>
+
+<p>The students become “citizen on probation” of the fictional “Otherland”. After a short explanation, “Otherland” of 3 or 4 students are formed which go around the park within 2 hours with the iPad as guide. On the way, they come across students looking for work, make new friends, learn to cycle (on unusual bikes) and learn to cook unfamiliar food. Both fixed and optional activities are spread throughout the park.</p>
+
+<p>The programme is for children from 11 to 14 years. This target group likes to choose for themselves when they do. This is made possible using an iPad and well thought out game structure. The iPad leads them through the park as a sort of ‘game master’. It helps them with their journey and the assignments, but also makes it possible to make their own strategic choices in the game. The feeling of autonomy is important for this audience and works as a motivator.
+    </p>
+  </section>
+    <section>
+      <h2>Interaction Design</h2>
+      <p>
+        The iPad application was developed by an external party who required a detailed specification. In addition, I created a separate website that is used in schools to prepare children for the visit to the park and facilitate discussion of the themes when they return. For this, I also created the visual design and built the (digiboard) website using Adobe Edge Animate.
+      </p>
+      
+      <div class="wireframes carousel-container">
+        <div class="carousel">
+          <div>
+            <img
+              src="images/work-restart-home.png"
+              alt="Restart wireframe"
+            />
+          </div>
+          <div>
+            <img
+              src="images/work-restart-kaart-overlay.png"
+              alt="Restart wireframe"
+            />
+          </div>
+          <div>
+            <img
+              src="images/work-restart-opdracht.png"
+              alt="Restart wireframe"
+            />
+          </div>
+          <div>
+            <img
+              src="images/work-restart-flow-couponblok.png"
+              alt="Flow diagram"
+            />
+          </div>
+          <div>
+            <img
+              src="images/work-restart-flow-quizblok.png"
+              alt="Flow diagram"
+            />
+          </div>
+          </div>
+        <button class="glider-prev">
+          <i class="fa fa-chevron-left"></i>
+        </button>
+        <button class="glider-next">
+          <i class="fa fa-chevron-right"></i>
+        </button>
+        <div role="tablist" class="dots"></div>
+      </div>
+      <div class="links">
+        <a class="secondary-button" href="http://restart.openluchtmuseum.nl" target="_blank">View the digiboard material<i class="fas fa-external-link-alt"></i></a>
+        </div>
+    </section>
+    <section>
+      <h2>User-generated content</h2>
+      <div class="videoWrapper">
+          <div class="videoSizer">
+        <iframe src="https://player.vimeo.com/video/551432414?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1600" height="900" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="ReportersClub"></iframe>
+    </div>
+</div>
+
+      <p>
+        After launch of the new publishing platform, Samsam approached us to
+        think about ideas for how we can engage kids and schools. I helped
+        facilitate several workshops and creative sessions which lead to the
+        Reportersclub concept.
+      </p>
+
+      <p>
+        The idea is to provide school classes with a tool that goes beyond just
+        another social network or user-generated-content platform. The site
+        provides specific features that help kids work together in teams, and
+        challenges them with subjects to investigate in the form of "Missions".
+      </p>
+
+      <p>
+        As an interaction designer is was exciting to work on complex
+        collaborative tools and make them accessible, yet sufficiently rich in
+        possibilities for self-expression, for the younger users. I prototyped
+        the site and mobile app using Axure while working together with
+        developers with an agile approach. I also helped out with some of the
+        visual design tasks during the later stages of production.
+    </p>
+    <div class="links">
+    <a class="secondary-button" href="https://www.patrickrushton.com/prototypes/samsam-reportersclub-prototype/#p=introduction" target="_blank">Open the Axure prototype<i class="fas fa-external-link-alt"></i></a>
+    </div>
+    </section>
+    <section id="more-work" class="inverse"></section>
+  </body>
+</html>
