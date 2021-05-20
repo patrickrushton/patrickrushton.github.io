@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Visit Holland App - UX Portfolio Case</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/glider.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.js"></script>
+    <script src="js/global.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        new Glider(document.querySelector(".wireframes .carousel"), {
+          slidesToShow: 1,
+          duration: 1,
+          dots: ".wireframes .dots",
+          arrows: {
+            prev: ".wireframes .glider-prev",
+            next: ".wireframes .glider-next",
+          },
+        });
+      });
+    </script>
+    <style>
+      section:nth-child(even) {
+        background-color: var(--tint-background);
+      }
+      .wireframes {
+        margin-top: 3rem;
+      }
+      .wireframes .carousel div {
+        padding: 0 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav></nav>
+    <header>
+      <h1>Visit Holland</h1>
+      <dl class="project-info">
+        <dt>Client</dt>
+        <dd>Netherlands Board of Tourism</dd>
+        <dt>Platform</dt>
+        <dd>Native iOS &amp; Android App</dd>
+        <dt>Role</dt>
+        <dd>Lead UX Designer</dd>
+      </dl>
+    </header>
+    <section>
+      <div class="videoWrapper">
+        <div class="videoSizer">
+          <iframe
+            src="https://player.vimeo.com/video/552987083?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            width="1600"
+            height="900"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            title="Video"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Research &amp; strategy</h2>
+      <p>
+        NBTC (Netherlands tourism board) asked LBi to design a mobile
+        application for tourists visiting Holland. In a workshop session
+        together with the client and with input from research with our target
+        users on Facebook, we explored the opportunities where an app could help
+        a visitor get the most from their trip.
+      </p>
+
+      <p>
+        I mapped these ideas out into a “user journey” to help think about what
+        kind of information, inspiration and functionality a visitor would find
+        useful in the different stages before, during and after their trip.
+      </p>
+      <p><img src="images/work-visit-holland-user-journey.png" alt="User journey"></p>
+      <p>
+        Based around facilitating the user in each of these contexts, I
+        developed a concept in which the user is helped to create a personalized
+        itinerary for their visit. The app inspires, recommends and sometimes
+        surprises the user with activities and points-of-interest. Particular
+        attention was paid to the user’s needs during their visit, where offline
+        access to information and maps is a requirement.
+      </p>
+    </section>
+    <section>
+      <h2>Interaction Design</h2>
+      <p>
+        I created an application navigation structure and user interface wireframes and used Apple Keynote to simulate the touch-screen interactions and animated transitions as a way to explain the concept to the client and my team. After the initial concept development, in my role as creative lead, I directed the further user-experience specification, information architecture and visual design of the application.
+      </p>
+
+      <div class="wireframes carousel-container">
+        <div class="carousel">
+          <div>
+            <img src="images/work-visit-holland-1.png" alt="Visit Holland wireframe" />
+          </div>
+          <div>
+            <img src="images/work-visit-holland-2.png" alt="Visit Holland wireframe" />
+          </div>
+          <div>
+            <img src="images/work-visit-holland-3.png" alt="Visit Holland wireframe" />
+          </div>
+          <div>
+            <img src="images/work-visit-holland-4.png" alt="Visit Holland wireframe" />
+          </div>
+          <div>
+            <img src="images/work-visit-holland-5.png" alt="Visit Holland wireframe" />
+          </div>
+          <div>
+            <img src="images/work-visit-holland-6.png" alt="Visit Holland wireframe" />
+          </div>
+          <div>
+            <img src="images/work-visit-holland-7.png" alt="Visit Holland wireframe" />
+          </div>
+        </div>
+        <button class="glider-prev">
+          <i class="fa fa-chevron-left"></i>
+        </button>
+        <button class="glider-next">
+          <i class="fa fa-chevron-right"></i>
+        </button>
+        <div role="tablist" class="dots"></div>
+      </div>
+
+    </section>
+
+    <section id="more-work" class="inverse"></section>
+  </body>
+</html>
