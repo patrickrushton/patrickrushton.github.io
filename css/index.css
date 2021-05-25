@@ -1,18 +1,18 @@
 /* General */
 
 /* Intro */
-#intro {
+header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
+    max-width: none;
     height: 200px;
     background-color: rgb(242, 242, 242);
     text-align: center;
     padding: 2rem;
 }
 
-#intro h1 span {
+header h1 span {
     display:block;
     color: var(--dark-mid-text);
     font-weight: normal;
@@ -20,7 +20,7 @@
 }
 
 @media screen and (min-width: 700px) {
-    #intro {
+    header {
         height: 700px;
         background: no-repeat center/cover url("/images/header-wide.png");
     }

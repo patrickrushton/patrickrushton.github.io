@@ -42,6 +42,15 @@
             next: ".spoordeel .glider-next",
           },
         });
+        new Glider(document.querySelector(".mijn-ns .carousel"), {
+          slidesToShow: 1,
+          duration: 1,
+          dots: ".mijn-ns .dots",
+          arrows: {
+            prev: ".mijn-ns .glider-prev",
+            next: ".mijn-ns .glider-next",
+          },
+        });
       });
     </script>
     <style>
@@ -76,6 +85,7 @@
         touchscreens that are used daily by thousands of train travellers. The
         following is a selection of those projects.
       </p>
+      <img src="images/work-ns-illustration.svg" alt="NS illustration" />
     </header>
 
     <section>
@@ -130,8 +140,17 @@
       <h2>E-commerce site</h2>
       <div class="videoWrapper">
         <div class="videoSizer">
-      <iframe src="https://player.vimeo.com/video/554650794?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1600" height="900" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Spoordeelwinkel"></iframe>
-  </div>
+          <iframe
+            src="https://player.vimeo.com/video/554650794?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            width="1600"
+            height="900"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            title="Spoordeelwinkel"
+          ></iframe>
+        </div>
+      </div>
       <p>
         Spoordeelwinkel is the new webshop from NS which offers package deals of
         a day-trip together with a train ticket. Deals are presented in
@@ -142,8 +161,9 @@
       <p>
         The customer chooses an offer, purchases online and receives a voucher
         for entrance together with an e-ticket for their train journey. I was
-        responsible for the concept and UX for the site, defining the optimal shopping and checkout flow. The following wireframes are an extract from the interaction
-        design document.
+        responsible for the concept and UX for the site, defining the optimal
+        shopping and checkout flow. The following wireframes are an extract from
+        the interaction design document.
       </p>
 
       <div class="spoordeel carousel-container">
@@ -178,6 +198,18 @@
               alt="Spoordeelwinkel wireframe"
             />
           </div>
+          <div>
+            <img
+              src="images/work-ns-spoordeel-6.png"
+              alt="Spoordeelwinkel wireframe"
+            />
+          </div>
+          <div>
+            <img
+              src="images/work-ns-spoordeel-7.png"
+              alt="Spoordeelwinkel wireframe"
+            />
+          </div>
         </div>
         <button class="glider-prev">
           <i class="fa fa-chevron-left"></i>
@@ -187,21 +219,62 @@
         </button>
         <div role="tablist" class="dots"></div>
       </div>
-    </section>
-    <section>
-      <div class="videoWrapper">
-        <div class="videoSizer">
-          <iframe
-            src="https://player.vimeo.com/video/552987083?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-            width="1600"
-            height="900"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowfullscreen
-            title="Video"
-          ></iframe>
+      <div class="links">
+        <a class="secondary-button" href="https://www.ns.nl/spoordeelwinkel" target="_blank">Visit the site at ns.nl/spoordeelwinkel<i class="fas fa-external-link-alt"></i></a>
         </div>
-      </div>
+    </section>
+
+    <section>
+      <h2>Mijn NS &amp; ticket machines</h2>
+      <p>In my role as UX lead for the NS, I was responsible for continued development and improvement of the NS website, mobile app (NS Reisplanner) and the yellow & blue ticket touchscreens. My role was to gather requirements from stakeholders, define user flows and interface designs and present solutions to the client and development teams.</p>
+          <div class="mijn-ns carousel-container">
+            <div class="carousel">
+              <div>
+                <img
+                  src="images/work-ns-mijn-ns1.png"
+                  alt="Mijn NS wireframe"
+                />
+              </div>
+              <div>
+                <img
+                  src="images/work-ns-mijn-ns2.png"
+                  alt="Mijn NS wireframe"
+                />
+              </div>
+              <div>
+                <img
+                  src="images/work-ns-mijn-ns3.png"
+                  alt="Mijn NS wireframe"
+                />
+              </div>
+              <div>
+                <img
+                  src="images/work-ns-mijn-ns4.png"
+                  alt="Mijn NS wireframe"
+                />
+              </div>
+              <div>
+                <img
+                  src="images/work-ns-ticket1.jpg"
+                  alt="NS ticket machine wireframe"
+                />
+              </div>
+              <div>
+                <img
+                  src="images/work-ns-ticket2.jpg"
+                  alt="NS ticket machine wireframe"
+                />
+              </div>
+            </div>
+            <button class="glider-prev">
+              <i class="fa fa-chevron-left"></i>
+            </button>
+            <button class="glider-next">
+              <i class="fa fa-chevron-right"></i>
+            </button>
+            <div role="tablist" class="dots"></div>
+          </div>
+          
     </section>
     <section id="more-work" class="inverse"></section>
   </body>
