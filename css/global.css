@@ -3,7 +3,7 @@
   --maximum-width: 1000px;
   /* --dark-heading: rgba(0,0,0,0.95); */
   --dark-text: rgba(0, 0, 0, 0.9);
-  --dark-mid-text: rgba(0, 0, 0, 0.6);
+  --dark-mid-text: rgba(0, 0, 0, 0.7);
   --light-text: rgba(255, 255, 255, 1);
   --light-mid-text: rgba(255, 255, 255, 0.9);
   --primary-accent: rgb(60, 179, 167);
@@ -22,6 +22,7 @@ body {
   font-size: 1.1rem;
   line-height: 1.4;
   color: var(--dark-text);
+  font-weight: 300;
 }
 
 h1, h2, h3, h4 {
@@ -39,7 +40,7 @@ h2 {
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
-  margin: 1rem auto 1rem auto;
+  margin: 1rem auto 2rem auto;
 }
 
 h3 {
@@ -53,7 +54,7 @@ section ul {
   max-width: 700px;
   color: var(--dark-mid-text);
   margin: 1rem auto 1rem auto;
-  text-align: left;
+  /* text-align: left; */
 }
 
 header p {
@@ -111,6 +112,12 @@ img {
 
 header {
   text-align: center;
+  max-width: var(--maximum-width);
+  margin: 0 auto;
+}
+
+header p {
+  text-align: left;
 }
 
 section, footer {
@@ -188,6 +195,7 @@ nav ul li:last-child:after {
 
 nav a {
   font-size: 1rem;
+  font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
   color: var(--dark-text);
@@ -238,6 +246,7 @@ nav a {
 
 /* Project info box */
 .project-info {
+  /* flex: 1 1 auto; */
   display: inline-grid;
   grid-template-columns: auto auto;
   margin: 2rem 1rem 0 1rem;
@@ -253,7 +262,7 @@ nav a {
 
 .project-info dt {
   grid-column: 1;
-  color: var(--dark-mid-text);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .project-info dd {
@@ -471,6 +480,7 @@ nav a {
 /* Add carousel arrows */
 @media screen and (min-width: 1050px) {
   .carousel-container {
+    margin: 2rem auto;
     padding: 0 2rem;
   }
 
@@ -479,6 +489,7 @@ nav a {
     display: block;
     top: calc(50% - 2.5rem); /* vertically align allowing for dots */
     font-size: 2rem;
+    color: var(--dark-mid-text);
     opacity: 0.8;
     transition: opacity 0.2s ease, color 0.2s ease;
   }
