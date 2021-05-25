@@ -197,6 +197,7 @@ nav ul li:last-child:after {
 
 nav a {
   font-size: 1rem;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
