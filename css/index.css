@@ -1,4 +1,7 @@
 /* General */
+h2 {
+    margin-bottom: 0.5rem;
+}
 
 /* Intro */
 header {
@@ -207,7 +210,7 @@ header h1 span {
 }
 
 .contact-links p {
-    margin: 0.5rem 0;
+    margin: 0;
 }
 
 .contact-links i {
