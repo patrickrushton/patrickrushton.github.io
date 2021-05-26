@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Repudo - UX Portfolio Case</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/glider.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.js"></script>
+    <script src="js/global.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        new Glider(document.querySelector(".wireframes .carousel"), {
+          slidesToShow: 1,
+          duration: 1,
+          dots: ".wireframes .dots",
+          arrows: {
+            prev: ".wireframes .glider-prev",
+            next: ".wireframes .glider-next",
+          },
+        });
+      });
+    </script>
+    <style>
+      
+      section:nth-child(odd) {
+        background-color: var(--tint-background);
+      }
+      .awards {
+        margin-top: 3rem;
+      }
+      /* .wireframes .carousel div {
+        padding: 0 1rem;
+      } */
+    </style>
+  </head>
+
+  <body>
+    <nav></nav>
+    <header>
+      <h1>Repudo</h1>
+
+      <dl class="project-info">
+        <dt>Client</dt>
+        <dd>Repudo</dd>
+        <dt>Platform</dt>
+        <dd>iOS &amp; Android apps</dd>
+        <dt>Role</dt>
+        <dd>UX Designer</dd>
+      </dl>
+      <div class="videoWrapper">
+        <div class="videoSizer">
+          <iframe
+            src="https://player.vimeo.com/video/555102624?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            width="1600"
+            height="900"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            title="Repudo"
+          ></iframe>
+        </div>
+      </div>
+      <p>
+        Repudo is a mobile application that lets users drop digital multimedia objects at real physical locations, either for a specific friend or as a surprise for anyone who comes by to pick it up. For example someone drops a photo or video at central station. You have to go there to pick it up before you can view its contents. Once it’s picked up, it’s gone from the map and you can choose to keep it or pass it on at another location.
+      </p>
+      <p>Of course, digital objects can be more than photos and videos – Sony Music and EMI have both recently used Repudo to drop songs for music fans and other possibilities could include branded games, gifts and coupons. The Repudo technology was first used for the Heineken UEFA Tour campaign. After the campaign, the focus was to launch Repudo as a standalone product in the Apple App Store.</p>
+    </header>
+
+    <section>
+      <h2>Interaction design</h2>
+      <p>
+        My task was to optimize the user experience and integrate additional functionality to help make it into a fun, compelling product. I developed the wireframes over several iterations and refined the interface design using interactive prototypes to test out the ergonomics and navigation. These UI designs were a basis for the art director and visual designer who created the hand-drawn artwork, bringing out the fun, personal aspects of the application. In addition to the iPhone application, I developed the interaction design for the Repudo website and a branded module for T-Mobile. A branded version was released for the Anne Frank Foundation.
+      </p>
+
+      <div class="wireframes carousel-container">
+        <div class="carousel">
+          <div>
+            <img
+              src="images/work-repudo-personas.png"
+              alt="Personas"
+            />
+          </div>
+          <div>
+            <img
+              src="images/work-repudo-flow.png"
+              alt="Flow"
+            />
+          </div>
+        <div>
+            <img
+              src="images/work-repudo-screens.png"
+              alt="screens"
+            />
+          </div>
+        </div>
+        <button class="glider-prev">
+          <i class="fa fa-chevron-left"></i>
+        </button>
+        <button class="glider-next">
+          <i class="fa fa-chevron-right"></i>
+        </button>
+        <div role="tablist" class="dots"></div>
+      </div>
+      </section>
+      <section>
+          <h2>Reviews &amp awards</h2>
+          <p>The app was awarded the Accenture Innovation Award and Next Web Dutch Startup Award. The Anne Frank version won FWA Mobile Of The Day, two LOVIE Awards, IDCA Best App and was nominated for a Webby.</p>
+          <ul>
+            <li>Number 1 in the Netherlands App store: average rating 4.5 stars.</li>
+            <li>Top: UI is prachtig: leuk, vernieuwend, duidelijk en lekker speels, net zoals het hele concept eigenlijk!</li>
+            <li>Weer een vernieuwende kijk op het gebied van communicatie. Deze eerste versie heeft me erg nieuwsgierig gemaakt wat er allemaal nog mogelijk is met Repudo in volgende releases. App werkt overigens erg makkelijk en soepel.</li>
+            <li>Wow: Great design after update !!</li>
+            <li>Werkt nu goed. Interface werkt veel sneller en intuïtiever, goed werk!</li>
+          </ul>
+          <div class="awards bleed">
+              <img src="images/work-repudo-awards.png" alt="Awards for Repudo" />
+          </div>
+      </section>
+    <section id="more-work" class="inverse"></section>
+  </body>
+</html>
