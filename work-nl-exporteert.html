@@ -34,30 +34,78 @@
 
       gtag("config", "UA-7367689-2");
     </script>
-<script>
-  window['_fs_debug'] = false;
-  window['_fs_host'] = 'fullstory.com';
-  window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
-  window['_fs_org'] = '131NFX';
-  window['_fs_namespace'] = 'FS';
-  (function(m,n,e,t,l,o,g,y){
-      if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
-      g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
-      o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_script;
-      y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
-      g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
-      g.anonymize=function(){g.identify(!!0)};
-      g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
-      g.log = function(a,b){g("log",[a,b])};
-      g.consent=function(a){g("consent",!arguments.length||a)};
-      g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
-      g.clearUserCookie=function(){};
-      g.setVars=function(n, p){g('setVars',[n,p]);};
-      g._w={};y='XMLHttpRequest';g._w[y]=m[y];y='fetch';g._w[y]=m[y];
-      if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};
-      g._v="1.3.0";
-  })(window,document,window['_fs_namespace'],'script','user');
-  </script>
+    <script>
+      window["_fs_debug"] = false;
+      window["_fs_host"] = "fullstory.com";
+      window["_fs_script"] = "edge.fullstory.com/s/fs.js";
+      window["_fs_org"] = "131NFX";
+      window["_fs_namespace"] = "FS";
+      (function (m, n, e, t, l, o, g, y) {
+        if (e in m) {
+          if (m.console && m.console.log) {
+            m.console.log(
+              'FullStory namespace conflict. Please set window["_fs_namespace"].'
+            );
+          }
+          return;
+        }
+        g = m[e] = function (a, b, s) {
+          g.q ? g.q.push([a, b, s]) : g._api(a, b, s);
+        };
+        g.q = [];
+        o = n.createElement(t);
+        o.async = 1;
+        o.crossOrigin = "anonymous";
+        o.src = "https://" + _fs_script;
+        y = n.getElementsByTagName(t)[0];
+        y.parentNode.insertBefore(o, y);
+        g.identify = function (i, v, s) {
+          g(l, { uid: i }, s);
+          if (v) g(l, v, s);
+        };
+        g.setUserVars = function (v, s) {
+          g(l, v, s);
+        };
+        g.event = function (i, v, s) {
+          g("event", { n: i, p: v }, s);
+        };
+        g.anonymize = function () {
+          g.identify(!!0);
+        };
+        g.shutdown = function () {
+          g("rec", !1);
+        };
+        g.restart = function () {
+          g("rec", !0);
+        };
+        g.log = function (a, b) {
+          g("log", [a, b]);
+        };
+        g.consent = function (a) {
+          g("consent", !arguments.length || a);
+        };
+        g.identifyAccount = function (i, v) {
+          o = "account";
+          v = v || {};
+          v.acctId = i;
+          g(o, v);
+        };
+        g.clearUserCookie = function () {};
+        g.setVars = function (n, p) {
+          g("setVars", [n, p]);
+        };
+        g._w = {};
+        y = "XMLHttpRequest";
+        g._w[y] = m[y];
+        y = "fetch";
+        g._w[y] = m[y];
+        if (m[y])
+          m[y] = function () {
+            return g._w[y].apply(this, arguments);
+          };
+        g._v = "1.3.0";
+      })(window, document, window["_fs_namespace"], "script", "user");
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.js"></script>
@@ -68,7 +116,6 @@
           slidesToShow: 1,
           slidesToScroll: 1,
           duration: 1,
-          dots: ".screenshots .dots",
           arrows: {
             prev: ".screenshots .glider-prev",
             next: ".screenshots .glider-next",
@@ -103,12 +150,13 @@
         background-color: rgb(118, 205, 242);
       }
 
+      section.screenshots .carousel-container {
+        margin-bottom: 0;
+      }
+
       section.screenshots .carousel div {
         padding: 0 1rem;
       }
-
-
-
     </style>
   </head>
 
@@ -133,61 +181,82 @@
     </header>
     <section>
       <p>
-Commissioned by the Ministry of Foreign Affairs, IJsfontein developed the app ‘NL Exporteert’. This app is made for entrepreneurs with international ambitions and brings together all relevant public and private export information and business networks.
+        Commissioned by the Ministry of Foreign Affairs, IJsfontein developed
+        the app ‘NL Exporteert’. This app is made for entrepreneurs with
+        international ambitions and brings together all relevant public and
+        private export information and business networks.
       </p>
       <p>
-        Via an interactive world map, the app provides current information about each country’s planned events, dos and don’ts of business abroad, key macro-economic factors, funding opportunities and contact details of embassies and trading posts worldwide. In addition you see an overview where the highest populations live, where economic growth is the highest, the buying power highest, how straightforward it is to do business, and where the Dutch export market is focussed. It contains a currency converter and shows the time differences with the Netherlands. Another section is the ‘Export Indicator’ where the user had access to relevant export documents, laws & regulations, international networks, social responsibility practices, tips & tricks and information about funding.
+        Via an interactive world map, the app provides current information about
+        each country’s planned events, dos and don’ts of business abroad, key
+        macro-economic factors, funding opportunities and contact details of
+        embassies and trading posts worldwide. In addition you see an overview
+        where the highest populations live, where economic growth is the
+        highest, the buying power highest, how straightforward it is to do
+        business, and where the Dutch export market is focussed. It contains a
+        currency converter and shows the time differences with the Netherlands.
+        Another section is the ‘Export Indicator’ where the user had access to
+        relevant export documents, laws & regulations, international networks,
+        social responsibility practices, tips & tricks and information about
+        funding.
       </p>
     </section>
     <section>
       <h2>UI &amp; visual design</h2>
       <p>
-        I developed the style so that it is recognizable as coming from the Dutch government, but also with it’s own visual personality. Using Sketch, I designed the app for multiple platforms including both Apple and Android smartphones and tablets and it was important to work closely with the developers to find solutions for scaling to different screen sizes. A good working relationship with the developers also helped realise the finer details of the design such as transitions and animations.
+        I developed the style so that it is recognizable as coming from the
+        Dutch government, but also with it’s own visual personality. Using
+        Sketch, I designed the app for multiple platforms including both Apple
+        and Android smartphones and tablets and it was important to work closely
+        with the developers to find solutions for scaling to different screen
+        sizes. A good working relationship with the developers also helped
+        realise the finer details of the design such as transitions and
+        animations.
       </p>
     </section>
     <section class="screenshots inverse">
       <div class="background">
-          <div class="carousel-container">
-            <div class="carousel">
-              <div>
+        <div class="carousel-container">
+          <div class="carousel">
+            <div>
               <img
-                  src="images/work-nlexporteert-phone1.png"
-                  alt="Screenshots of the smartphone app"
-                />
-              </div> 
-              <div>
-                <img
-                  src="images/work-nlexporteert-phone2.png"
-                  alt="Screenshots of the smartphone app"
-                />
-              </div>
-              <div>
-                <img
+                src="images/work-nlexporteert-phone1.png"
+                alt="Screenshots of the smartphone app"
+              />
+            </div>
+            <div>
+              <img
+                src="images/work-nlexporteert-phone2.png"
+                alt="Screenshots of the smartphone app"
+              />
+            </div>
+            <div>
+              <img
                 src="images/work-nlexporteert1.png"
                 alt="Screenshot of the iPad app"
               />
             </div>
             <div>
               <img
-              src="images/work-nlexporteert2.png"
-              alt="Screenshot of the iPad app"
-            />
-          </div>
-          <div>
-            <img
-            src="images/work-nlexporteert3.png"
-            alt="Screenshot of the iPad app"
-          />
-        </div>
-              </div>
+                src="images/work-nlexporteert2.png"
+                alt="Screenshot of the iPad app"
+              />
             </div>
-            <button class="glider-prev">
-              <i class="fa fa-chevron-left"></i>
-            </button>
-            <button class="glider-next">
-              <i class="fa fa-chevron-right"></i>
-            </button>
+            <div>
+              <img
+                src="images/work-nlexporteert3.png"
+                alt="Screenshot of the iPad app"
+              />
+            </div>
           </div>
+          <button class="glider-prev">
+            <i class="fa fa-chevron-left"></i>
+          </button>
+          <button class="glider-next">
+            <i class="fa fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
     </section>
     <section id="more-work" class="inverse"></section>
   </body>
