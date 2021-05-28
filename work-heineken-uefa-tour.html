@@ -3,6 +3,7 @@
   <head>
     <title>Heineken UEFA Trophy Tour - UX Portfolio Case</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link href="css/normalize.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -19,27 +20,66 @@
     />
     <link href="css/glider.css" rel="stylesheet" />
     <link href="css/global.css" rel="stylesheet" />
+   
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-7367689-2"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+  
+        gtag("config", "UA-7367689-2");
+      </script>
+  <script>
+    window['_fs_debug'] = false;
+    window['_fs_host'] = 'fullstory.com';
+    window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
+    window['_fs_org'] = '131NFX';
+    window['_fs_namespace'] = 'FS';
+    (function(m,n,e,t,l,o,g,y){
+        if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+        g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+        o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_script;
+        y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+        g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+        g.anonymize=function(){g.identify(!!0)};
+        g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+        g.log = function(a,b){g("log",[a,b])};
+        g.consent=function(a){g("consent",!arguments.length||a)};
+        g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+        g.clearUserCookie=function(){};
+        g.setVars=function(n, p){g('setVars',[n,p]);};
+        g._w={};y='XMLHttpRequest';g._w[y]=m[y];y='fetch';g._w[y]=m[y];
+        if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};
+        g._v="1.3.0";
+    })(window,document,window['_fs_namespace'],'script','user');
+    </script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.js"></script>
     <script src="js/global.js"></script>
     <script>
-        window.addEventListener("load", function () {
-          new Glider(document.querySelector(".wireframes .carousel"), {
-            slidesToShow: 1,
-            duration: 1,
-            dots: ".wireframes .dots",
-            arrows: {
-              prev: ".wireframes .glider-prev",
-              next: ".wireframes .glider-next",
-            },
-          });
+      window.addEventListener("load", function () {
+        new Glider(document.querySelector(".wireframes .carousel"), {
+          slidesToShow: 1,
+          duration: 1,
+          dots: ".wireframes .dots",
+          arrows: {
+            prev: ".wireframes .glider-prev",
+            next: ".wireframes .glider-next",
+          },
         });
-      </script>
+      });
+    </script>
     <style>
       section:nth-child(even) {
         background-color: var(--tint-background);
       }
-     
     </style>
   </head>
 
@@ -71,48 +111,70 @@
         </div>
       </div>
       <div>
-          <p>
-            LBi Lost Boys was asked to create a global location-based messaging campaign for Heineken called ‘The Heineken Trophy Hunt’. In this campaign, fans of the well-known beer brand entered into a world-wide hunt for ‘Virtual Trophies’, which they searched for using their iPhones.
-          </p>
-          <p>The campaign made use of the brand-new <a href="work-repudo.html">Repudo</a> technology, where a message, photo, or video can be created and dropped at a real-life physical location. To open a message, photo, or video, you first have to go to the actual spot to pick up the Repudo item. Once it has been picked up from that location, the Repudo disappears and exists only in your phone, where nobody else can catch it. You can then choose to keep your Repudo item or drop it at another physical location for someone else!</p>
+        <p>
+          LBi Lost Boys was asked to create a global location-based messaging
+          campaign for Heineken called ‘The Heineken Trophy Hunt’. In this
+          campaign, fans of the well-known beer brand entered into a world-wide
+          hunt for ‘Virtual Trophies’, which they searched for using their
+          iPhones.
+        </p>
+        <p>
+          The campaign made use of the brand-new
+          <a href="work-repudo.html">Repudo</a> technology, where a message,
+          photo, or video can be created and dropped at a real-life physical
+          location. To open a message, photo, or video, you first have to go to
+          the actual spot to pick up the Repudo item. Once it has been picked up
+          from that location, the Repudo disappears and exists only in your
+          phone, where nobody else can catch it. You can then choose to keep
+          your Repudo item or drop it at another physical location for someone
+          else!
+        </p>
       </div>
     </section>
     <section>
-        <h2>Concept sketches</h2>
-        <p>
-            After brainstorming the concept together with the project team, I set to work with my marker pens to explore the ideas in a series of sketches which helped us present the concept to the client for their approval.
-        </p>
-        <div class="wireframes carousel-container">
-            <div class="carousel">
-              <div>
-                <img
-                  src="images/work-heineken-concept-sketches.jpg"
-                  alt="Sketches"
-                />
-              </div>
-              <div>
-                <img
-                  src="images/work-heineken-wondering-sketches.png"
-                  alt="Sketches"
-                />
-              </div>
-           
-            </div>
-            <button class="glider-prev">
-              <i class="fa fa-chevron-left"></i>
-            </button>
-            <button class="glider-next">
-              <i class="fa fa-chevron-right"></i>
-            </button>
-            <div role="tablist" class="dots"></div>
+      <h2>Concept sketches</h2>
+      <p>
+        After brainstorming the concept together with the project team, I set to
+        work with my marker pens to explore the ideas in a series of sketches
+        which helped us present the concept to the client for their approval.
+      </p>
+      <div class="wireframes carousel-container">
+        <div class="carousel">
+          <div>
+            <img
+              src="images/work-heineken-concept-sketches.jpg"
+              alt="Sketches"
+            />
           </div>
-        </section>
-        <section>
-            <h2>Interaction design</h2>
-            <p>Using Adobe Creative Suite and Metaspark’s excellent iPhone UI toolkit, I was able to quickly put together a click-through prototype in which the details of the interaction could be worked out and handed over to the visual designer. Finally, I laid out the individual steps in a flow to help communicate the final concept with the rest of the team responsible for the development of the iPhone app and branded Facebook page.</p>
-            <div><img src="images/work-heineken-io.png" /></div>
-            
-      </section>
+          <div>
+            <img
+              src="images/work-heineken-wondering-sketches.png"
+              alt="Sketches"
+            />
+          </div>
+        </div>
+        <button class="glider-prev">
+          <i class="fa fa-chevron-left"></i>
+        </button>
+        <button class="glider-next">
+          <i class="fa fa-chevron-right"></i>
+        </button>
+        <div role="tablist" class="dots"></div>
+      </div>
+    </section>
+    <section>
+      <h2>Interaction design</h2>
+      <p>
+        Using Adobe Creative Suite and Metaspark’s excellent iPhone UI toolkit,
+        I was able to quickly put together a click-through prototype in which
+        the details of the interaction could be worked out and handed over to
+        the visual designer. Finally, I laid out the individual steps in a flow
+        to help communicate the final concept with the rest of the team
+        responsible for the development of the iPhone app and branded Facebook
+        page.
+      </p>
+      <div><img src="images/work-heineken-io.png" /></div>
+    </section>
     <section id="more-work" class="inverse"></section>
   </body>
 </html>
