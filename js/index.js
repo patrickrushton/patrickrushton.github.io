@@ -3,7 +3,7 @@ $.getScript(
 ).done(() => {
   var scroll = new SmoothScroll('a[href*="#"]');
 });
-
+  
 $(function(){
   $(".work-carousel").load("includes/work-carousel.html");
 });
