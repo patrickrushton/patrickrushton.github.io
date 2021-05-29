@@ -149,7 +149,7 @@ header h1 span {
 #recommendations .carousel-container:after {
     content: url('../images/quote-close.svg');
     position: absolute;
-    bottom: 0;
+    bottom: 1.5rem;
     right: 0.5rem;
     opacity: 0.5;    
 }
