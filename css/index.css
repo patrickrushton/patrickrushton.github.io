@@ -114,34 +114,41 @@ header h1 span {
 .recommendation {
     scroll-snap-align: start;
     padding: 0 2rem;
-}
-
-.recommendation img {
-    height: 9rem;
-    width: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
-    filter: grayscale(100%);
+    color: var(--light-mid-text);  
 }
 
 .recommendation blockquote {
-    font-size: 1rem;
-    color: var(--light-mid-text);  
-    text-align: center; 
-    margin: 2rem 0;
+    /* text-align: center;  */
+    margin: 0;
+    /* font-style: italic; */
 }
 
-.recommendation cite {
+
+.recommendation img {
+    height: 4rem;
+    width: auto;
     display: block;
-    font-style: italic;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    margin: 0 1rem 0 0;
+}
+
+
+.recommendation cite {
+    display: flex;
+    align-items: center;
     margin-top: 1rem;
+    font-style: italic;
+}
+
+.recommendation cite img {
+    /* display: block; */
 }
 
 #recommendations .carousel-container:before {
     content: url('../images/quote-open.svg');
     position: absolute;
-    top: -1.5rem;
+    top: -2.5rem;
     left: 0.5rem;
     opacity: 0.5;    
 }
@@ -157,6 +164,8 @@ header h1 span {
 @media screen and (min-width: 700px) {
     .recommendation {
         padding: 0 2rem;
+        font-size: 1rem;
+
     }
 }
 
