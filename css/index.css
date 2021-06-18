@@ -101,6 +101,7 @@ header h1 span {
     }
 }
 
+
 /* Recommendations */
 #recommendations {
     background-color: #0A66C2;
@@ -115,10 +116,10 @@ header h1 span {
     scroll-snap-align: start;
     padding: 0 2rem;
     color: var(--light-mid-text);  
+    text-align: center; 
 }
 
 .recommendation blockquote {
-    text-align: center; 
     margin: 0;
     /* font-style: italic; */
 }
@@ -127,17 +128,17 @@ header h1 span {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2rem auto;
+    margin: 1rem auto;
     font-style: italic;
 }
 
 .recommendation img {
-    height: 4rem;
+    height: 7rem;
     width: auto;
-    display: block;
+    display: inline-block;
     border-radius: 50%;
     filter: grayscale(100%);
-    margin: 0 1rem 0 0;
+    margin: 0 0 1rem 0;
 }
 
 
@@ -164,6 +165,7 @@ header h1 span {
 
     }
 }
+
 
 /* Clients */
 .clients-grid, .more-clients-grid {
