@@ -442,7 +442,7 @@ nav a {
   scroll-snap-type: x mandatory;
 }
 
-.carousel div {
+.carousel .glider-slide {
   scroll-snap-align: start;
 }
 
